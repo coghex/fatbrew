@@ -3,7 +3,9 @@ import os
 import glob
 import time
 
-#The temperature sensor code comes from https://learn.adafruit.com/adafruits-raspberry-pi-lesson-11-ds18b20-temperature-sensing
+#attach liquid flow meter to pin 22 and temperature sensor to pin 4
+
+#the temperature sensor library is here: https://github.com/timofurrer/ds18b20
 os.system('modprobe w1-gpio')
 os.system('modprobe w1-therm')
 
